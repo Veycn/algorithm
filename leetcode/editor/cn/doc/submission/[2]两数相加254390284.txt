@@ -1,0 +1,52 @@
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ */
+
+function ListNode(val, next) {
+    this.val = (val === undefined ? 0 : val)
+    this.next = (next === undefined ? null : next)
+}
+
+var l1 = new ListNode(null, new ListNode(2, new ListNode(4, new ListNode(3, null))))
+var l2 = new ListNode(null, new ListNode(5, new ListNode(6, new ListNode(4, null))))
+
+// console.log(createList([1,2,3]))
+
+var addTwoNumbers = function (l1, l2) {
+    var head = new ListNode()
+
+    var carry = 0, p = head;
+    while (l1.next || l2.next) {
+        var sum = (l1.next.val || 0) + (l2.next.val || 0) + carry
+        carry = 0
+        if (sum >= 10) {
+            carry = 1
+            sum = sum % 10
+        }
+        l1 = l1.next
+        l2 = l2.next
+        p = p.next = new ListNode(sum, null)
+    }
+    if (carry) {
+        p.next = new ListNode(carry, null)
+    }
+    return head.next
+};
+
+console.log(addTwoNumbers(l1, l2))
+
+//total_testcases:1568
+//total_correct:0
+//input_formatted:[2,4,3]
+[5,6,4]
+//expected_output:[7,0,8]
+//code_output:[0,8]
