@@ -39,6 +39,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[141]环形链表.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[141]环形链表.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[141]环形链表.js" />
+              <option name="questionId" value="141" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[150]逆波兰表达式求值.js">
           <value>
             <LeetcodeEditor>
@@ -81,6 +90,24 @@
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[8]字符串转换整数 (atoi).md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[8]字符串转换整数 (atoi).js" />
               <option name="questionId" value="8" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[933]最近的请求次数.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[933]最近的请求次数.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[933]最近的请求次数.js" />
+              <option name="questionId" value="969" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[剑指 Offer II 042]最近请求次数.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[剑指 Offer II 042]最近请求次数.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[剑指 Offer II 042]最近请求次数.js" />
+              <option name="questionId" value="1000293" />
             </LeetcodeEditor>
           </value>
         </entry>
