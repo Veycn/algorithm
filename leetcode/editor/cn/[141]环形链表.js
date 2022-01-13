@@ -67,26 +67,41 @@
  * @param {ListNode} head
  * @return {boolean}
  */
+// var _hasCycle = function(head) {
+//     if (!head || !head.next){
+//         return false
+//     }
+//     var list = [], p = head.next
+//     while (p){
+//         // 先判断 当前节点 在 已经走过的节点中是否存在
+//         // 存在则说明有环
+//         if (list.indexOf(p) > -1){
+//             return true
+//         }
+//         // 将当前节点放入列表中
+//         list.push(p)
+//         // 移动指针
+//         p = p.next
+//     }
+//     // 没有找到环
+//     return false
+// };
+
+
 var hasCycle = function(head) {
     if (!head || !head.next){
         return false
     }
-    var list = [], p = head.next
-    while (p){
-        // 先判断 当前节点 在 已经走过的节点中是否存在
-        // 存在则说明有环
-        if (list.indexOf(p) > -1){
+    var fast = head.next.next, slow = head.next
+    while (fast){
+        if (fast === slow){
             return true
         }
-        // 将当前节点放入列表中
-        list.push(p)
-        // 移动指针
-        p = p.next
+        fast = fast.next ? fast.next.next : null
+        slow = slow.next
     }
-    // 没有找到环
     return false
 };
-
 // var head = {val: null, next: {val: 1, next: {val: 2, next: null}}}
 // hasCycle(head)
 //leetcode submit region end(Prohibit modification and deletion)
