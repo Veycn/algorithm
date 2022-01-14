@@ -81,13 +81,17 @@ var _removeDuplicates = function (nums) {
 
 // 不使用 splice
 var removeDuplicates = function (nums) {
-    if (nums.length === 0) {
-        return 0
-    }
+    // if (nums.length === 0) {
+    //     return 0
+    // }
+    // 一遍 for 循环，用一个指针A指向当前比较数据，另一个指针B向后移动
+    // B 指针每次移动比较 A指针的数据
+    // 比较相等，A 不动， B后移
+    // 比较不等，A 后移，将 B 处的数据赋值给移动之后的 A
     var target = 0
     for (var i = 0; i < nums.length; i++) {
         if (nums[target] !== nums[i]) {
-            if (++target !== i){
+            if (++target !== i) {
                 nums[target] = nums[i]
             }
         }
@@ -95,6 +99,10 @@ var removeDuplicates = function (nums) {
     return target + 1
 }
 
-console.log(removeDuplicates([1, 1, 2]));
+// 解答成功:
+//      执行耗时:76 ms,击败了92.40% 的JavaScript用户
+//      内存消耗:40 MB,击败了95.27% 的JavaScript用户
+
+// console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]));
 
 //leetcode submit region end(Prohibit modification and deletion)
