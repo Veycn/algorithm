@@ -59,26 +59,42 @@
  * @param {number[]} nums
  * @return {number}
  */
-var removeDuplicates = function (nums) {
+var _removeDuplicates = function (nums) {
     if (nums.length === 0) {
         return 0
     }
     // 在循环中涉及到添加和删除元素的情况下
     // 不要 var i = 0, len = nums.length
     // 因为数组长度此时是动态的，不要瞎搞
-    for (var i = 0; i < nums.length;) {
+    for (var i = 0; i < nums.length - 1;) {
         // 如果当前元素与下一个位置的元素相等，删除下一个元素
         // 继续这个判断
         // 直到这个判断不满足的时候，才移动索引到下一个位置
-        if (nums[i] === nums[i + 1]){
+        if (nums[i] === nums[i + 1]) {
             nums.splice(i + 1, 1)
-        }else {
+        } else {
             i++
         }
     }
     return nums.length
 };
 
-// console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]));
+// 不使用 splice
+var removeDuplicates = function (nums) {
+    if (nums.length === 0) {
+        return 0
+    }
+    var target = 0
+    for (var i = 0; i < nums.length; i++) {
+        if (nums[target] !== nums[i]) {
+            if (++target !== i){
+                nums[target] = nums[i]
+            }
+        }
+    }
+    return target + 1
+}
+
+console.log(removeDuplicates([1, 1, 2]));
 
 //leetcode submit region end(Prohibit modification and deletion)
