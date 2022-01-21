@@ -41,12 +41,18 @@
 
 //leetcode submit region begin(Prohibit modification and deletion)
 
+
 var MinStack = function() {
     this.stack = []
     this.minStack = [Infinity]
 };
 
 /**
+ * 核心思想是用一个额外的栈把最小值存起来
+ * 每一次 push 的时候都把整个栈中最小值 push 一次
+ * 所以栈顶永远是最小值
+ *
+ * 弹栈的时候，这个栈也一起弹。
  * @param {number} val
  * @return {void}
  */
@@ -63,6 +69,7 @@ MinStack.prototype.push = function(val) {
  * @return {void}
  */
 MinStack.prototype.pop = function() {
+    // 弹栈的时候两个栈都弹一次
     this.stack.pop()
     this.minStack.pop()
 };

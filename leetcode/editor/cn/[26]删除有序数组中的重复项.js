@@ -84,7 +84,7 @@ var removeDuplicates = function (nums) {
     // if (nums.length === 0) {
     //     return 0
     // }
-    // 一遍 for 循环，用一个指针A指向当前比较数据，另一个指针B向后移动
+    // 一遍 for 循环，用一个指针A(target)指向当前比较数据，另一个指针B（i）向后移动
     // B 指针每次移动比较 A指针的数据
     // 比较相等，A 不动， B后移
     // 比较不等，A 后移，将 B 处的数据赋值给移动之后的 A

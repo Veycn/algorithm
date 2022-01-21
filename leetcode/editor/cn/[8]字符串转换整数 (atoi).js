@@ -137,11 +137,13 @@ var myAtoi = function (s) {
             sig = -1
             index++
         } else {
+            // 出现了+和-之外其他符号
             return 0
         }
     }
     var result = 0;
     while (index < s.length && s[index] >= '0' && s[index] <= '9') {
+        // (+s[index]) 转换成数字，注意避免字符串拼接
         result = result * 10 + (+s[index])
         index++
     }
