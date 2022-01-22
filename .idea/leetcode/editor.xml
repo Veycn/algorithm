@@ -102,6 +102,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[41]缺失的第一个正数.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[41]缺失的第一个正数.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[41]缺失的第一个正数.js" />
+              <option name="questionId" value="41" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[8]字符串转换整数 (atoi).js">
           <value>
             <LeetcodeEditor>
