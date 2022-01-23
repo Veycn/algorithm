@@ -79,14 +79,35 @@
  * @param {string} s
  * @return {string}
  */
-var reverseWords = function(s) {
-    let strArr = s.trim().split(' '), res = ''
-    for (let i = strArr.length - 1; i >= 0; i --){
-        if (strArr[i] !== ''){
-            res += strArr[i] + (i === 0 ? '' : ' ')
+// var _reverseWords = function(s) {
+//     let strArr = s.trim().split(' '), res = ''
+//     for (let i = strArr.length - 1; i >= 0; i --){
+//         if (strArr[i] !== ''){
+//             res += strArr[i] + (i === 0 ? '' : ' ')
+//         }
+//     }
+//     return res
+// };
+
+
+var reverseWords = function (s) {
+    s = s.trim();
+    let start = -1, end = s.length - 1, res = '';
+    for (let i = s.length - 1; i >= 0; i--) {
+        let char = s[i]
+        if (char === ' ') {
+            if (end === -1) continue
+            res += s.substring(start, end + 1) + ' '
+            end = -1
+        } else {
+            start = i
+            if (end === -1) end = start
         }
     }
+    if (start <= end){
+        res += s.substring(start, end + 1)
+    }
     return res
-};
-// console.log(reverseWords("a good example"))
+}
+console.log(reverseWords("the sky is blue"))
 //leetcode submit region end(Prohibit modification and deletion)
