@@ -91,8 +91,8 @@
 
 
 var reverseWords = function (s) {
-    s = s.trim();
-    let start = -1, end = s.length - 1, res = '';
+    // s = s.trim();
+    let start = -1, end = -1, res = '';
     for (let i = s.length - 1; i >= 0; i--) {
         let char = s[i]
         if (char === ' ') {
@@ -104,10 +104,10 @@ var reverseWords = function (s) {
             if (end === -1) end = start
         }
     }
-    if (start <= end){
+    if (start <= end) {
         res += s.substring(start, end + 1)
     }
-    return res
+    return res.trim()
 }
-console.log(reverseWords("the sky is blue"))
+// console.log(reverseWords(" the sky is blue "))
 //leetcode submit region end(Prohibit modification and deletion)
