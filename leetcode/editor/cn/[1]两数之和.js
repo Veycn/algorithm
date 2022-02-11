@@ -69,7 +69,7 @@
  * @param target
  * @returns {[any,number]}
  */
-var twoSum = function (nums, target) {
+var twoSum_ = function (nums, target) {
     // nums = [1,2,3,4,5], target = 9
     var map = new Map()
     for (var i = 0, len = nums.length; i < len; ++i) {
@@ -77,7 +77,7 @@ var twoSum = function (nums, target) {
         // 当 num[i] = 5 的时候， target - nums[i] = 4
         // 4 的 下标 为 3，此时就找到了 加起来为 target 的两个数
         // 第一个数的下标在 map 中， 第二个就是当前 i
-        if (map.has(target - nums[i])){
+        if (map.has(target - nums[i])) {
             return [map.get(target - nums[i]), i]
         }
 
@@ -86,4 +86,54 @@ var twoSum = function (nums, target) {
         map.set(nums[i], i)
     }
 };
+
+/**
+ * 双指针解法
+ * 对原题有一些魔改，双指针依赖排序
+ * 所以返回的是元素，不是下标
+ */
+
+var twoSum__ = function (nums, target) {
+    nums = nums.sort((a, b) => a - b)
+    let lo = 0, hi = nums.length - 1
+    while (lo < hi) {
+        let sum = nums[lo] + nums[hi]
+        if (sum > target) {
+            hi--
+        } else if (sum < target) {
+            lo++
+        } else if (sum === target) {
+            return [nums[lo], nums[hi]]
+        }
+    }
+    return []
+}
+
+
+/**
+ * 再次魔改：nums 中存在多对和为 target，返回所有和为target 的元素对
+ */
+var twoSum = function (nums, target) {
+    nums = nums.sort((a, b) => a - b)
+    let lo = 0, hi = nums.length - 1
+    const result = []
+    while (lo < hi) {
+        let left = nums[lo], right = nums[hi]
+        let sum = left + right
+
+        if (sum < target) {
+            while (lo < hi && nums[lo] === left) lo++;
+        } else if (sum > target) {
+            while (lo < hi && nums[hi] === right) hi--;
+        } else if (sum === target) {
+            result.push([nums[lo], nums[hi]])
+            while (lo < hi && nums[lo] === left) lo++;
+            while (lo < hi && nums[hi] === right) hi--;
+        }
+    }
+    return result
+}
+
+
+console.log(twoSum([2,2,1,1,1,3,3], 4))
 //leetcode submit region end(Prohibit modification and deletion)
