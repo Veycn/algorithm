@@ -79,5 +79,53 @@ var threeSum = function (nums) {
     }
     return result
 }
-console.log(threeSum([-1,0,1,2,-1,-4]))
+// console.log(threeSum([-1,0,1,2,-1,-4]))
+
+/**
+ *
+ * @param nums      数组
+ * @param n
+ * @param start
+ * @param target
+ * @returns {*[]}
+ */
+var nSumTarget = function (nums, n, start, target) {
+    let size = nums.length, result = [];
+    if (n < 2 || size < n) {
+        return result
+    }
+    if (n === 2) {
+        let lo = start, hi = size - 1
+        while (lo < hi) {
+            let left = nums[lo], right = nums[hi]
+            let sum = left + right
+            if (sum < target) {
+                while (lo < hi && nums[lo] === left) lo++;
+            } else if (sum > target) {
+                while (lo < hi && nums[hi] === right) hi--;
+            } else if (sum === target) {
+                result.push([nums[lo], nums[hi]])
+                while (lo < hi && nums[lo] === left) lo++;
+                while (lo < hi && nums[hi] === right) hi--;
+            }
+        }
+    } else {
+        for (let i = start; i < size; i++) {
+            let sub = nSumTarget(nums, n - 1, i + 1, target - nums[i])
+            for (let arr of sub) {
+                arr.push(nums[i])
+                result.push(arr)
+            }
+            while (i < size - 1 && nums[i] === nums[i + 1]) i++;
+        }
+    }
+
+    return result
+}
+
+const res = nSumTarget([-1, 0, 1, 1, 2, 3, 3, 4, 5, 6], 4, 0, 6)
+res.forEach(arr => arr.sort((a, b) => a - b))
+console.log(res)
+
+
 //leetcode submit region end(Prohibit modification and deletion)
