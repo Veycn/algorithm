@@ -113,7 +113,7 @@ var twoSum__ = function (nums, target) {
 /**
  * 再次魔改：nums 中存在多对和为 target，返回所有和为target 的元素对
  */
-var twoSum = function (nums, target) {
+var twoSum___ = function (nums, target) {
     nums = nums.sort((a, b) => a - b)
     let lo = 0, hi = nums.length - 1
     const result = []
@@ -133,7 +133,53 @@ var twoSum = function (nums, target) {
     }
     return result
 }
+// console.log(twoSum([2,2,1,1,1,3,3], 4))
 
+/**
+ * 用魔改之后的两数之和解决三树之和
+ * - nums中每一个数字都可能是target的组成数字之一
+ * - 遍历 nums ，针对每一个 nums[i]
+ * - 在剩下的nums 中，找到一个两数之和 等于 target - nums[i]
+ * - 需要对 twoSum 修改，从指定索引开始
+ */
 
-console.log(twoSum([2,2,1,1,1,3,3], 4))
+var twoSumTarget = function (nums, start, target) {
+    // nums = nums.sort((a, b) => a - b)
+    let lo = start, hi = nums.length - 1
+    const result = []
+    while (lo < hi) {
+        let left = nums[lo], right = nums[hi]
+        let sum = left + right
+
+        if (sum < target) {
+            while (lo < hi && nums[lo] === left) lo++;
+        } else if (sum > target) {
+            while (lo < hi && nums[hi] === right) hi--;
+        } else if (sum === target) {
+            result.push([nums[lo], nums[hi]])
+            while (lo < hi && nums[lo] === left) lo++;
+            while (lo < hi && nums[hi] === right) hi--;
+        }
+    }
+    return result
+}
+
+var threeSum = function (nums, target) {
+    const size = nums.length, result = []
+    nums = nums.sort((a, b) => a - b)
+    for (let i = 0; i < size; i++) {
+        // 将三数之和转换为求解两数之和
+        let tuple = twoSumTarget(nums, i + 1, target - nums[i])
+        // 两数之和可能找出多组符合的数字
+        // 于是给每一个组合加入当前的第一个数组 nums[i]
+        for (let arr of tuple) {
+            arr.push(nums[i])
+        }
+        result.push(...tuple)
+        while (i < size - 1 && nums[i] === nums[i + 1]) i++;
+    }
+    return result
+}
+
+console.log(threeSum([1, 1, 1, 2, 3, 4, 0, 2], 6))
 //leetcode submit region end(Prohibit modification and deletion)
