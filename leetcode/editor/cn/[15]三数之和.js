@@ -94,6 +94,7 @@ var nSumTarget = function (nums, n, start, target) {
     if (n < 2 || size < n) {
         return result
     }
+    // 递归进行到两个数字的时候，最终还是求两数之和
     if (n === 2) {
         let lo = start, hi = size - 1
         while (lo < hi) {
@@ -110,6 +111,7 @@ var nSumTarget = function (nums, n, start, target) {
             }
         }
     } else {
+        // 超过两个数的时候继续递归
         for (let i = start; i < size; i++) {
             let sub = nSumTarget(nums, n - 1, i + 1, target - nums[i])
             for (let arr of sub) {
