@@ -35,7 +35,7 @@
  * @param {TreeNode} root
  * @return {number}
  */
-var maxDepth = function (root) {
+var _maxDepthBFS = function (root) {
     if (root == null) {
         return 0
     }
@@ -43,7 +43,7 @@ var maxDepth = function (root) {
     while (queue.length > 0) {
         // 获取本层节点的个数
         let size = queue.length
-        while(size > 0){
+        while (size > 0) {
             // 依次拿到每一个节点
             root = queue.shift();
             // 判断左右节点是否存在，存在则放入队列
@@ -62,10 +62,21 @@ var maxDepth = function (root) {
 //     this.left = (left===undefined ? null : left)
 //     this.right = (right===undefined ? null : right)
 // }
-//
+
+
+/**
+ * 递归三要素
+ * 1、确定函数等价关系式（参数、返回值），参数是二叉树节点，返回值是其深度
+ * 2、递归结束条件，当 root 为空时，递归结束
+ * 3、函数主功能。分别求左右子树最大深度
+ */
+var maxDepthDFS = function (root) {
+    if (root == null) return 0
+    let left = maxDepthDFS(root.left)
+    let right = maxDepthDFS(root.right)
+    return 1 + Math.max(left, right)
+}
 // const root = new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)))
-// maxDepth(root)
-
-
+// console.log(maxDepth(root))
 
 //leetcode submit region end(Prohibit modification and deletion)
