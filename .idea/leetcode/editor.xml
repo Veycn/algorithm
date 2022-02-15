@@ -93,6 +93,24 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[121]买卖股票的最佳时机.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[121]买卖股票的最佳时机.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[121]买卖股票的最佳时机.js" />
+              <option name="questionId" value="121" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[12]整数转罗马数字.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[12]整数转罗马数字.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[12]整数转罗马数字.js" />
+              <option name="questionId" value="12" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[1380]矩阵中的幸运数.js">
           <value>
             <LeetcodeEditor>
@@ -144,6 +162,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[15]三数之和.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[15]三数之和.js" />
               <option name="questionId" value="15" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[198]打家劫舍.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[198]打家劫舍.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[198]打家劫舍.js" />
+              <option name="questionId" value="198" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -246,12 +273,39 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[62]不同路径.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[62]不同路径.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[62]不同路径.js" />
+              <option name="questionId" value="62" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[637]二叉树的层平均值.js">
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[637]二叉树的层平均值.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[637]二叉树的层平均值.js" />
               <option name="questionId" value="637" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[70]爬楼梯.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[70]爬楼梯.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[70]爬楼梯.js" />
+              <option name="questionId" value="70" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[746]使用最小花费爬楼梯.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[746]使用最小花费爬楼梯.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[746]使用最小花费爬楼梯.js" />
+              <option name="questionId" value="747" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -291,6 +345,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[9]回文数.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[9]回文数.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[9]回文数.js" />
+              <option name="questionId" value="9" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[剑指 Offer 27]二叉树的镜像.js">
           <value>
             <LeetcodeEditor>
@@ -306,6 +369,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[剑指 Offer II 042]最近请求次数.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[剑指 Offer II 042]最近请求次数.js" />
               <option name="questionId" value="1000293" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[剑指 Offer II 088]爬楼梯的最少成本.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[剑指 Offer II 088]爬楼梯的最少成本.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[剑指 Offer II 088]爬楼梯的最少成本.js" />
+              <option name="questionId" value="1000243" />
             </LeetcodeEditor>
           </value>
         </entry>
