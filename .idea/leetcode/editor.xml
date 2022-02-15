@@ -93,6 +93,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[11]盛最多水的容器.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[11]盛最多水的容器.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[11]盛最多水的容器.js" />
+              <option name="questionId" value="11" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[121]买卖股票的最佳时机.js">
           <value>
             <LeetcodeEditor>
@@ -129,6 +138,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[14]最长公共前缀.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[14]最长公共前缀.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[14]最长公共前缀.js" />
+              <option name="questionId" value="14" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[150]逆波兰表达式求值.js">
           <value>
             <LeetcodeEditor>
@@ -162,6 +180,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[15]三数之和.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[15]三数之和.js" />
               <option name="questionId" value="15" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[16]最接近的三数之和.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[16]最接近的三数之和.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[16]最接近的三数之和.js" />
+              <option name="questionId" value="16" />
             </LeetcodeEditor>
           </value>
         </entry>
