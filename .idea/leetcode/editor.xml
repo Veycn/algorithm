@@ -48,6 +48,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[112]路径总和.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[112]路径总和.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[112]路径总和.js" />
+              <option name="questionId" value="112" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[116]填充每个节点的下一个右侧节点指针.js">
           <value>
             <LeetcodeEditor>
@@ -81,6 +90,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[1189]“气球” 的最大数量.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[1189]“气球” 的最大数量.js" />
               <option name="questionId" value="1297" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[1380]矩阵中的幸运数.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[1380]矩阵中的幸运数.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[1380]矩阵中的幸运数.js" />
+              <option name="questionId" value="1496" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -162,6 +180,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[26]删除有序数组中的重复项.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[26]删除有序数组中的重复项.js" />
               <option name="questionId" value="26" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[297]二叉树的序列化与反序列化.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[297]二叉树的序列化与反序列化.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[297]二叉树的序列化与反序列化.js" />
+              <option name="questionId" value="297" />
             </LeetcodeEditor>
           </value>
         </entry>

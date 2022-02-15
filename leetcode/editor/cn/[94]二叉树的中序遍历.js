@@ -65,7 +65,14 @@
  * 迭代法中序遍历
  * @param {TreeNode} root
  * @return {number[]}
+ *                  5
+ *                 / \
+ *               1    2
+ *              / \  / \
+ *             3   4 6   7
+ *             [3, 1, 4, 5, 6, 2, 7]
  */
+
 var _inorderTraversal = function (root) {
     let res = [], stack = []
     while (root != null || stack.length > 0) {
