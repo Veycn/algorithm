@@ -192,6 +192,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[189]轮转数组.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[189]轮转数组.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[189]轮转数组.js" />
+              <option name="questionId" value="189" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[198]打家劫舍.js">
           <value>
             <LeetcodeEditor>
@@ -207,6 +216,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[199]二叉树的右视图.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[199]二叉树的右视图.js" />
               <option name="questionId" value="199" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[19]删除链表的倒数第 N 个结点.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[19]删除链表的倒数第 N 个结点.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[19]删除链表的倒数第 N 个结点.js" />
+              <option name="questionId" value="19" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -369,6 +387,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[94]二叉树的中序遍历.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[94]二叉树的中序遍历.js" />
               <option name="questionId" value="94" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[977]有序数组的平方.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[977]有序数组的平方.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[977]有序数组的平方.js" />
+              <option name="questionId" value="1019" />
             </LeetcodeEditor>
           </value>
         </entry>
