@@ -53,18 +53,18 @@
  * hello
  *   ll
  */
-var strStr = function(haystack, needle) {
-    if (needle.length > haystack.length)return -1
+var _strStr = function (haystack, needle) {
+    if (needle.length > haystack.length) return -1
     if (!haystack || !needle) return 0
-    for (let i = 0; i < haystack.length; i++){
-        if (haystack[i] === needle[0]){
+    for (let i = 0; i < haystack.length; i++) {
+        if (haystack[i] === needle[0]) {
             let j;
-            for (j = 1; j < needle.length; j++){
-                if (haystack[i+j] !== needle[j]){
+            for (j = 1; j < needle.length; j++) {
+                if (haystack[i + j] !== needle[j]) {
                     break
                 }
             }
-            if (j === needle.length){
+            if (j === needle.length) {
                 return i
             }
         }
@@ -74,5 +74,18 @@ var strStr = function(haystack, needle) {
 // 解答成功:
 //     执行耗时:6084 ms,击败了5.01% 的JavaScript用户
 //     内存消耗:41.5 MB,击败了12.95% 的JavaScript用户
+
+
+var _strStr = function (haystack, needle) {
+    if (needle.length > haystack.length) return -1
+    if (!haystack || !needle) return 0
+    let len = needle.length, left = 0, right = len - 1;
+    for (let i = 0; i < haystack.length;){
+        if (haystack[i] === needle[left] && haystack[right] === needle[len - 1]){
+            judge(haystack, i + 1, right - 1)
+        }
+    }
+}
+
 console.log(strStr('', 'a'))
 //leetcode submit region end(Prohibit modification and deletion)
