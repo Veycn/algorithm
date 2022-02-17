@@ -237,6 +237,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[21]合并两个有序链表.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[21]合并两个有序链表.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[21]合并两个有序链表.js" />
+              <option name="questionId" value="21" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[226]翻转二叉树.js">
           <value>
             <LeetcodeEditor>
@@ -246,12 +255,30 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[24]两两交换链表中的节点.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[24]两两交换链表中的节点.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[24]两两交换链表中的节点.js" />
+              <option name="questionId" value="24" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[26]删除有序数组中的重复项.js">
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[26]删除有序数组中的重复项.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[26]删除有序数组中的重复项.js" />
               <option name="questionId" value="26" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[27]移除元素.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[27]移除元素.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[27]移除元素.js" />
+              <option name="questionId" value="27" />
             </LeetcodeEditor>
           </value>
         </entry>

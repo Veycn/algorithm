@@ -88,6 +88,15 @@ var removeDuplicates = function (nums) {
     // B 指针每次移动比较 A指针的数据
     // 比较相等，A 不动， B后移
     // 比较不等，A 后移，将 B 处的数据赋值给移动之后的 A
+    // [0,0,1,1,1,2,2,3,3,4]
+    //  t   i   if ++t !== i => num[t] = num[i]
+    // [0,1,1,1,1,2,2,3,3,4]
+    //    t       i  if ++t !== i => num[t] = num[i]
+    // [0,1,2,1,1,2,2,3,3,4]
+    //      t         i  if ++t !== i => num[t] = num[i]
+    // [0,1,2,3,1,2,2,3,3,4]
+    //        t           i
+    // [0,1,2,3,4,2,2,3,3,4] 结束
     var target = 0
     for (var i = 0; i < nums.length; i++) {
         if (nums[target] !== nums[i]) {
