@@ -57,6 +57,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[114]二叉树展开为链表.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[114]二叉树展开为链表.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[114]二叉树展开为链表.js" />
+              <option name="questionId" value="114" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[116]填充每个节点的下一个右侧节点指针.js">
           <value>
             <LeetcodeEditor>
@@ -309,6 +318,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[31]下一个排列.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[31]下一个排列.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[31]下一个排列.js" />
+              <option name="questionId" value="31" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[3]无重复字符的最长子串.js">
           <value>
             <LeetcodeEditor>
@@ -333,6 +351,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[429]N 叉树的层序遍历.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[429]N 叉树的层序遍历.js" />
               <option name="questionId" value="764" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[443]压缩字符串.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[443]压缩字符串.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[443]压缩字符串.js" />
+              <option name="questionId" value="443" />
             </LeetcodeEditor>
           </value>
         </entry>

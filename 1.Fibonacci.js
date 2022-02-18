@@ -37,15 +37,44 @@
 //     return Fib[n]
 // }
 
+//
+// function fibonacci(n, pre = 0, cur = 1) {
+//     if (n === 0) return 0;
+//     if (n <= 1) {
+//         return cur
+//     }
+//     return fibonacci(n - 1, cur, pre + cur)
+// }
+//
+// console.time()
+// console.log(fibonacci(0))
+// console.timeEnd()
 
-function fibonacci(n, pre = 0, cur = 1) {
-    if (n === 0) return 0;
-    if (n <= 1) {
-        return cur
+var compress = function (chars) {
+    if (chars.length < 2) return chars.length
+    let i = 0, j = 0, k = 0;
+    for (; j < chars.length;) {
+        while (j < chars.length && chars[i] === chars[j]) {
+            j++
+        }
+
+        if (j - i === 1) {
+            chars[k++] = chars[j - 1]
+            i = j
+        } else {
+            chars[k++] = chars[i]
+            let dis = j - i;
+            dis = (dis + '').toString().split('');
+            for (let m = 0; m < dis.length; m++) {
+                chars[k + m] = dis[m]
+            }
+            i = j;
+            k = k + dis.length
+        }
     }
-    return fibonacci(n - 1, cur, pre + cur)
-}
+    return k
+};
 
-console.time()
-console.log(fibonacci(0))
-console.timeEnd()
+console.log(compress(["a", "a", "b", "b", "c", "c", "c"]))
+console.log(compress(["a", "a", "a", "a", "a", "b"]))
+console.log(compress(["a", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b"]))
