@@ -381,6 +381,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[557]反转字符串中的单词 III.js">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[557]反转字符串中的单词 III.md" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[557]反转字符串中的单词 III.js" />
+              <option name="questionId" value="557" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/[559]N 叉树的最大深度.js">
           <value>
             <LeetcodeEditor>
