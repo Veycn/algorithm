@@ -56,23 +56,42 @@
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */
-var nextPermutation = function(nums) {
-    let max = -1, index = 0
-    for (let i = 0; i < nums.length; i++){
-        if (nums[i] > max){
-            max = nums[i]
-            index = i
+var nextPermutation = function (nums) {
+    const len = nums.length
+    for (let i = len - 1; i >= 0; i--) {
+        for (let j = len - 1; j > i; j--) {
+            if (nums[i] < nums[j]) {
+                swap(nums, i, j)
+                sort(nums, i + 1)
+                console.log(nums)
+                return
+            }
         }
     }
-    if (index === 0){
-        nums.reverse()
-    }else{
-        max = nums[index - 1]
-        nums[index - 1] = nums[index]
-        nums[index] = max
-    }
+    sort(nums, 0)
     console.log(nums)
 };
 
-nextPermutation([3,2,1])
+function swap(nums, i, j) {
+    let t = nums[i]
+    nums[i] = nums[j]
+    nums[j] = t
+}
+
+function sort(arr, start) {
+    let len = arr.length
+    for (let i = 0; i < len; i++) {
+        for (let j = start; j < len - i - 1; j++) {
+            if (arr[j] > arr[j+1]) {
+                swap(arr, j, j+1)
+            }
+        }
+    }
+}
+
+console.log(nextPermutation([1, 3, 2]))
+
+// let a  = [2,4,1,3]
+// sort(a, 0)
+// console.log(a)
 //leetcode submit region end(Prohibit modification and deletion)
