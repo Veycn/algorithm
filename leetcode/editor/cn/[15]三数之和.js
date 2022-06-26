@@ -63,12 +63,12 @@ var twoSumTarget = function (nums, start, target) {
     return result
 }
 
-var threeSum = function (nums) {
+var threeSum = function (nums, target) {
     const size = nums.length, result = []
     nums = nums.sort((a, b) => a - b)
     for (let i = 0; i < size; i++) {
         // 将三数之和转换为求解两数之和
-        let tuple = twoSumTarget(nums, i + 1, -nums[i])
+        let tuple = twoSumTarget(nums, i + 1, target - nums[i])
         // 两数之和可能找出多组符合的数字
         // 于是给每一个组合加入当前的第一个数组 nums[i]
         for (let arr of tuple) {
@@ -125,9 +125,34 @@ var nSumTarget = function (nums, n, start, target) {
     return result
 }
 
-const res = nSumTarget([-1, 0, 1, 1, 2, 3, 3, 4, 5, 6], 4, 0, 6)
-res.forEach(arr => arr.sort((a, b) => a - b))
-console.log(res)
+// const res = nSumTarget([-1, 0, 1, 1, 2, 3, 3, 4, 5, 6], 4, 0, 6)
+// res.forEach(arr => arr.sort((a, b) => a - b))
+// console.log(res)
 
+
+var threeSum = function(nums) {
+    nums = nums.sort();
+    const result = [], size = nums.length;
+    for (let i = 0; i < size; i ++) {
+        if (i > 0 && nums[i] === nums[i + 1]) continue;
+        let l = i + 1, r = size - 1;
+        let left = nums[l], right = nums[r];
+        let target = 0 - nums[i]
+        while(l < r) {
+            if (nums[l] + nums[r] < target) {
+                while (l < r && nums[l] === left) l++;
+            } else if (nums[l] + nums[r] > target){
+                while (l < r && nums[r] === right) r--;
+            } else {
+                result.push(nums[l], nums[r], nums[i])
+                while (l < r && nums[r] === right) r--;
+                while (l < r && nums[l] === left) l++;
+            }
+        }
+    }
+    return result;
+};
+
+console.log(threeSum([-1,0,1,2,-1,-4]))
 
 //leetcode submit region end(Prohibit modification and deletion)

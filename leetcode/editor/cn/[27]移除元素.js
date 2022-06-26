@@ -73,9 +73,9 @@ var removeElement = function (nums, val) {
             left++
         }
     }
-    // console.log(nums)
+    console.log(nums)
     return left
 };
 
-// console.log(removeElement([3,2,2,3], 3))
+console.log(removeElement([3,2,2,3], 3))
 //leetcode submit region end(Prohibit modification and deletion)
